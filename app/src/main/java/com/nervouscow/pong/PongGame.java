@@ -108,13 +108,13 @@ class PongGame extends SurfaceView implements Runnable{
             mBeepID = mSP.load(descriptor, 0);
 
             descriptor = assetManager.openFd("boop.ogg");
-            mBeepID = mSP.load(descriptor, 0);
+            mBoopID = mSP.load(descriptor, 0);
 
             descriptor = assetManager.openFd("bop.ogg");
-            mBeepID = mSP.load(descriptor, 0);
+            mBopID = mSP.load(descriptor, 0);
 
             descriptor = assetManager.openFd("miss.ogg");
-            mBeepID = mSP.load(descriptor, 0);
+            mMissID = mSP.load(descriptor, 0);
 
         } catch(IOException e) {
             Log.d("error", "failed to load sound files");
